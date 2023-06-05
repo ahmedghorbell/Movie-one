@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import ReactStars from "react-stars";
 import { UilRedo } from "@iconscout/react-unicons";
+import { Link } from "react-router-dom";
 
 function Navigation({
   inputSearch,
@@ -15,6 +16,7 @@ function Navigation({
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
+        <Link to="/">
         <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Ipg8XIByqQll84XwQQaRpR3PqCfPBsWyo46lm_dxNOX4S49byITQ8BUoJPJPH24qhto&usqp=CAU"
           alt="logo"
@@ -25,7 +27,7 @@ function Navigation({
             padding: "10px",
           }}
         />
-        <Nav.Link href="/movies">Movies</Nav.Link>
+        </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

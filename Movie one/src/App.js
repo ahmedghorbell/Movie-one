@@ -6,6 +6,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Details from "./components/Details/Details.js";
 import Footer from "./components/Footer/Footer.js";
+import Home from "./components/Home/Home.js";
 
 function App() {
   const [movies, setMovies] = useState(moviesData);
@@ -31,6 +32,7 @@ function App() {
         resetFilter={resetFilter}
       />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route
           path="/movies"
           element={
