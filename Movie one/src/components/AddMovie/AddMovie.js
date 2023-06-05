@@ -41,7 +41,7 @@ const AddMovie = ({ add }) => {
 
   return (
     <>
-      <div class="button-container">
+      <div className="button-container">
       <Button onClick={handleShow} size="lg" variant="danger">Add new movie</Button>{' '}
       </div>
       <Modal show={show} onHide={handleClose}>

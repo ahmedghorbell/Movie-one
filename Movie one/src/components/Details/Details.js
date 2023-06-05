@@ -9,7 +9,7 @@ const Details = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const movieDetail = moviesData.find((el) => el.id == id);
+    const movieDetail = moviesData.find((el) => el.id === Number(id));
     setDetail(movieDetail);
   }, [id]);
 
@@ -20,18 +20,19 @@ const Details = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        marginTop :"30px"
-       }}
+        marginTop: "30px",
+      }}
     >
-      <Button style={{
-        marginBottom: "20px"
-       }}
+      <Button
+        style={{
+          marginBottom: "20px",
+        }}
         onClick={() => navigate(-1)}
       >
         Back
       </Button>
       <h3
-        style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}
+        style={{ fontSize: "20px", fontWeight: "bold", margin: "20px" }}
       >
         {detail.description}
       </h3>
@@ -41,13 +42,13 @@ const Details = () => {
           width: "50%",
           paddingBottom: "28.125%",
           height: "0",
-          marginTop: "20px"
+          margin: "20px",
         }}
       >
         <iframe
           title="trailer"
           src={detail.trailer}
-          frameborder="0"
+          frameBorder="0"
           style={{
             position: "absolute",
             top: "0",

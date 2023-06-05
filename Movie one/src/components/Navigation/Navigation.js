@@ -21,9 +21,9 @@ function Navigation({
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Ipg8XIByqQll84XwQQaRpR3PqCfPBsWyo46lm_dxNOX4S49byITQ8BUoJPJPH24qhto&usqp=CAU"
           alt="logo"
           style={{
-            width: "180px",
-            height: "auto",
-            marginLeft: "100px",
+            width: "150px",
+            height: "80px",
+            marginLeft: "50px",
             padding: "10px",
           }}
         />
